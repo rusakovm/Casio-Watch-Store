@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+
+config.php
+db_config.php
+database.php
+
+/vendor/
+.vscode/
+.idea/
+*.log

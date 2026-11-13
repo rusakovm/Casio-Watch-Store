@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="/style/responsive.css">
+    <link rel="stylesheet" href="/style/portfolio-pages.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать аккаунт — CASIO</title>
+</head>
+<body class="auth-page">
+  <main class="auth-layout">
+    <a class="auth-brand" href="/gh/main.php" aria-label="CASIO — главная">CASIO<span> / WATCH STORE</span></a>
+    <section class="vrap-log" aria-labelledby="auth-heading">
+      <p class="auth-eyebrow">Личный кабинет</p>
+      <h1 id="auth-heading">Создать аккаунт</h1>
+      <p class="auth-description">Создайте аккаунт, чтобы пользоваться возможностями магазина.</p>
+      <form action="/insertlogin.php" class="login-form" method="post">
+        <label for="auth-email">Электронная почта</label>
+        <input id="auth-email" type="email" class="input__reg" name="Login" autocomplete="email" placeholder="name@example.com" required maxlength="254">
+        <label for="auth-password">Пароль</label>
+        <input id="auth-password" type="password" class="input__reg" name="Password" autocomplete="new-password" placeholder="Введите пароль" required minlength="6">
+        <button type="submit" class="button__res">Зарегистрироваться</button>
+      </form>
+      <p class="auth-switch">Уже есть аккаунт? <a href="/gh/login.html">Войти</a></p>
+    </section>
+    <p class="auth-back"><a href="/gh/main.php">← Вернуться в магазин</a></p>
+  </main>
+</body>
+</html>
